@@ -15,3 +15,4 @@ Basic academic version of Battleship game to build upon.
 | LEI   | xxxxxx | xxxxxxx |
 
 Atualizem nomes e números!
+## Grupo GrupoTp05_LEI-PL-7
