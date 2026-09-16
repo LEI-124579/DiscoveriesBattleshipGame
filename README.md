@@ -12,7 +12,7 @@ Basic academic version of Battleship game to build upon.
 |-------|--------|------|
 | LEI   | 129494 | Guilherme Cabo |
 | LEI   | 124579 | Jaime Ferreira |
-| LEI   | xxxxxx | xxxxxxx |
+| LEI   | 127523 | Diego Costa |
 | LEI   | xxxxxx | xxxxxxx |
 
 Atualizem nomes e números!
