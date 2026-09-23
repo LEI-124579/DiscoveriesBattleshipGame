@@ -35,6 +35,4 @@ Basic academic version of Battleship game to build upon.
 - [Caravela – Wikipedia](https://pt.wikipedia.org/wiki/Caravela)
 - [Barca – Wikipedia](https://pt.wikipedia.org/wiki/Barca)
 
-Verificação
-
 -----------------
