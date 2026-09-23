@@ -34,3 +34,5 @@ Basic academic version of Battleship game to build upon.
 - [Nau – Wikipedia](https://pt.wikipedia.org/wiki/Nau)
 - [Caravela – Wikipedia](https://pt.wikipedia.org/wiki/Caravela)
 - [Barca – Wikipedia](https://pt.wikipedia.org/wiki/Barca)
+
+Verificação
