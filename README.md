@@ -1,7 +1,7 @@
 # Battleship
 
-Basic academic version of Battleship game to build upon.
-
+Este projeto implementa uma versão do jogo Batalha Naval
+inspirada na época dos Descobrimentos.
 
 # Discoveries Battleship Game
 
@@ -35,4 +35,10 @@ Basic academic version of Battleship game to build upon.
 - [Caravela – Wikipedia](https://pt.wikipedia.org/wiki/Caravela)
 - [Barca – Wikipedia](https://pt.wikipedia.org/wiki/Barca)
 
------------------
+## Regras
+
+Cada jogador posiciona a sua frota numa grelha.
+
+Em cada turno, o jogador pode realizar três tiros contra o adversário.
+
+O jogo termina quando todos os navios de um dos jogadores forem afundados.
