@@ -42,3 +42,11 @@ Cada jogador posiciona a sua frota numa grelha.
 Em cada turno, o jogador pode realizar três tiros contra o adversário.
 
 O jogo termina quando todos os navios de um dos jogadores forem afundados.
+
+## Gestão de User Stories no GitHub - Resposta à pergunta E-6
+
+- **Escolher uma nova user story:** no menu **Issues**, seleccionar a user story que se pretende realizar. Na secção **Assignees**, seleccionar **Assign yourself**, ficando, desta forma, o issue atribuído ao próprio utilizador.
+
+- **Indicar que uma user story foi implementada:** no menu **Issues**, seleccionar a user story escolhida anteriormente foi implementada e fechá-la através da opção **Close issue**. Como boa prática, é recomendável redigir primeiro um comentário breve que indique que a funcionalidade foi implementada, por exemplo, *"Funcionalidade implementada."*, e, de seguida, fechar o issue através de **Close with comment**. O botão é o mesmo, o texto no mesmo é que muda, caso exista ou não um comentário.
+
+- **Indicar que o Product Owner desistiu de uma user story:** adicionar ao issue uma label que indique que a user story deixou de ser necessária, por exemplo, **`status: WONTFIX`**, e fechar o issue. É também recomendável adicionar um comentário a explicar que a user story foi abandonada por decisão do Product Owner e, sempre que possível, indicar o motivo dessa decisão.
