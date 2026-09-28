@@ -1,15 +1,24 @@
 /**
- *
+ * Representa uma caravela no jogo.
  */
 package iscteiul.ista.battleship;
-
+/**
+ * Representa um navio do tipo caravela.
+ *
+ * <p>Uma caravela ocupa duas posições no tabuleiro,
+ * dependendo da sua direção.</p>
+ */
 public class Caravel extends Ship {
     private static final Integer SIZE = 2;
     private static final String NAME = "Caravela";
 
     /**
-     * @param bearing the bearing where the Caravel heads to
-     * @param pos     initial point for positioning the Caravel
+     * Cria uma nova caravela.
+     *
+     * @param bearing direcção para a qual a caravela está orientada
+     * @param pos posição inicial da caravela
+     * @throws NullPointerException se a direcção fornecida for {@code null}
+     * @throws IllegalArgumentException se a direcção não for válida
      */
     public Caravel(Compass bearing, IPosition pos) throws NullPointerException, IllegalArgumentException {
         super(Caravel.NAME, bearing, pos);
@@ -35,9 +44,9 @@ public class Caravel extends Ship {
     }
 
     /*
-     * (non-Javadoc)
+     * Obtém o tamanho da caravela.
      *
-     * @see battleship.Ship#getSize()
+     * @return número de posições ocupadas pela caravela
      */
     @Override
     public Integer getSize() {
