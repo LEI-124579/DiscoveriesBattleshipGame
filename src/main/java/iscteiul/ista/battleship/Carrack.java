@@ -1,18 +1,32 @@
 /**
- *
+ * Representa uma caravela no jogo.
  */
 package iscteiul.ista.battleship;
 
-public class Carrack extends Ship {
-    private static final Integer SIZE = 3;
-    private static final String NAME = "Nau";
+/**
+ * Representa um navio do tipo caravela.
+ *
+ * <p>Uma caravela ocupa duas posições no tabuleiro,
+ * dependendo da sua direcção.</p>
+ */
+public class Caravel extends Ship {
+    private static final Integer SIZE = 2;
+    private static final String NAME = "Caravela";
 
     /**
-     * @param bearing
-     * @param pos
+     * Cria uma nova caravela.
+     *
+     * @param bearing direcção para a qual a caravela está orientada
+     * @param pos posição inicial da caravela
+     * @throws NullPointerException se a direcção fornecida for {@code null}
+     * @throws IllegalArgumentException se a direcção não for válida
      */
-    public Carrack(Compass bearing, IPosition pos) throws IllegalArgumentException {
-        super(Carrack.NAME, bearing, pos);
+    public Caravel(Compass bearing, IPosition pos) throws NullPointerException, IllegalArgumentException {
+        super(Caravel.NAME, bearing, pos);
+
+        if (bearing == null)
+            throw new NullPointerException("ERROR! invalid bearing for the caravel");
+
         switch (bearing) {
             case NORTH:
             case SOUTH:
@@ -25,18 +39,19 @@ public class Carrack extends Ship {
                     getPositions().add(new Position(pos.getRow(), pos.getColumn() + c));
                 break;
             default:
-                throw new IllegalArgumentException("ERROR! invalid bearing for the carrack");
+                throw new IllegalArgumentException("ERROR! invalid bearing for the caravel");
         }
+
     }
 
-    /*
-     * (non-Javadoc)
+    /**
+     * Obtém o tamanho da caravela.
      *
-     * @see battleship.Ship#getSize()
+     * @return número de posições ocupadas pela caravela
      */
     @Override
     public Integer getSize() {
-        return Carrack.SIZE;
+        return SIZE;
     }
 
 }
