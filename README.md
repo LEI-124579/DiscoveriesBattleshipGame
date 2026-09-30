@@ -43,6 +43,11 @@ Em cada turno, o jogador pode realizar três tiros contra o adversário.
 
 O jogo termina quando todos os navios de um dos jogadores forem afundados.
 
+## +Regras
+
+O jogador tem realizar os três tiros em 30 segundos
+Caso o jogador não realize os três tiros no tempo respetivo, passa automaticamente para o proximo jogador
+
 ## Gestão de User Stories no GitHub - Resposta à pergunta E-6
 
 - **Escolher uma nova user story:** no menu **Issues**, seleccionar a user story que se pretende realizar. Na secção **Assignees**, seleccionar **Assign yourself**, ficando, desta forma, o issue atribuído ao próprio utilizador.
