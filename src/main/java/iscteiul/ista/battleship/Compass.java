@@ -1,8 +1,3 @@
-/**
- * Representa as possíveis direcções utilizadas pelos navios no jogo.
- */
-/**
-
 package iscteiul.ista.battleship;
 
 /**

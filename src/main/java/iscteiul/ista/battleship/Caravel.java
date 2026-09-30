@@ -1,6 +1,3 @@
-/**
- * Representa uma caravela no jogo.
- */
 package iscteiul.ista.battleship;
 /**
  * Representa um navio do tipo caravela.

@@ -1,6 +1,3 @@
-/**
- * Representa uma barca no jogo.
- */
 package iscteiul.ista.battleship;
 
 /**
