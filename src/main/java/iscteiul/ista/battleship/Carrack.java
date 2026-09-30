@@ -1,32 +1,24 @@
-/**
- * Representa uma caravela no jogo.
- */
 package iscteiul.ista.battleship;
 
 /**
- * Representa um navio do tipo caravela.
+ * Representa um navio do tipo nau.
  *
- * <p>Uma caravela ocupa duas posições no tabuleiro,
+ * <p>Uma nau ocupa três posições no tabuleiro,
  * dependendo da sua direcção.</p>
  */
-public class Caravel extends Ship {
-    private static final Integer SIZE = 2;
-    private static final String NAME = "Caravela";
+public class Carrack extends Ship {
+    private static final Integer SIZE = 3;
+    private static final String NAME = "Nau";
 
     /**
-     * Cria uma nova caravela.
+     * Cria uma nova nau.
      *
-     * @param bearing direcção para a qual a caravela está orientada
-     * @param pos posição inicial da caravela
-     * @throws NullPointerException se a direcção fornecida for {@code null}
+     * @param bearing direcção para a qual a nau está orientada
+     * @param pos posição inicial da nau
      * @throws IllegalArgumentException se a direcção não for válida
      */
-    public Caravel(Compass bearing, IPosition pos) throws NullPointerException, IllegalArgumentException {
-        super(Caravel.NAME, bearing, pos);
-
-        if (bearing == null)
-            throw new NullPointerException("ERROR! invalid bearing for the caravel");
-
+    public Carrack(Compass bearing, IPosition pos) throws IllegalArgumentException {
+        super(Carrack.NAME, bearing, pos);
         switch (bearing) {
             case NORTH:
             case SOUTH:
@@ -39,19 +31,18 @@ public class Caravel extends Ship {
                     getPositions().add(new Position(pos.getRow(), pos.getColumn() + c));
                 break;
             default:
-                throw new IllegalArgumentException("ERROR! invalid bearing for the caravel");
+                throw new IllegalArgumentException("ERROR! invalid bearing for the carrack");
         }
-
     }
 
     /**
-     * Obtém o tamanho da caravela.
+     * Obtém o tamanho da nau.
      *
-     * @return número de posições ocupadas pela caravela
+     * @return número de posições ocupadas pela nau
      */
     @Override
     public Integer getSize() {
-        return SIZE;
+        return Carrack.SIZE;
     }
 
 }
